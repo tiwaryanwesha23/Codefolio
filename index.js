@@ -36,3 +36,18 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+function showAlert() {
+  // Display an alert message
+  alert("Form submitted successfully!");
+
+  // Clear the form fields
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("message").value = "";
+  
+  // Prevent the form from actually submitting
+  return false;
+}
+
